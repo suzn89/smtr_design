@@ -195,3 +195,30 @@ section {
 #index.managepage > .menu {
   width:1080px
 }
+#contents {
+  width:100%;
+  max-width:1900px;
+  min-width:1026px;
+  margin: 0 auto;
+  padding:0 20px;
+  background:#cccccc;
+}
+.page_tit {
+	position:relative;
+	height:40px;
+	margin-bottom:40px;
+}
+.page_tit::after {
+	display:block;
+	content:'';
+	clear:both;
+}
+.page_tit h3 {
+	float:left;
+	font-size:28px;
+	color:#7d7d7d;
+}
+.page_tit h3>span {
+	margin-left:10px;
+	font-size:18px;
+}
