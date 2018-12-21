@@ -5,8 +5,309 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>긴급신고공동대응 모의훈련 시스템</title>
+    <link href="../css/incon_reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/smtr/style.css">
 </head>
 <body>
-    
+    <header>
+        <div id="header_cont">
+            <h1><a href="#"><i class="icon-laptop"></i>신고통합 모의훈련 시스템</a></h1>
+            <h2>시나리오 관리</h2>
+            <div id="adm_menu" class="adminmn"><span><i class="icon-administrator"></i>관리자</span>
+                <ul class="dropdown">
+                    <li><a href="#"><i class="icon-gear"></i>설정</a></li>
+                    <li><a href="#"><i class="icon-logout"></i>로그아웃</a></li>
+                </ul>
+            </div>
+        </div>  
+    </header> 
+    <section id="contents">
+        <div class="page_tit">
+            <h3>새로운 시나리오 등록</h3>
+            <ul class="btn-group">
+                <li><a href="#" class="btn-basic"><i class="icon-cross"></i>취소</a></li>
+                <li><a href="#" class="btn-basic"><i class="icon-save"></i>저장</a></li>
+                <li><a href="#" class="btn-basic"><i class="icon-trash"></i>삭제</a></li>
+            </ul>
+        </div> <!-- // page_tit -->
+        <div id="inputTable">
+            <table class="column3">
+            <colgroup>
+                <col width="16%">
+                <col width="16%">
+                <col width="17%">
+                <col width="17%">
+                <col width="17%">
+                <col width="17%">
+            </colgroup>
+            <tr>
+                <th colspan="6">시나리오 이름</th>                
+            </tr>
+            <tr>
+                <td colspan="6"><input type="text" style="width:100%;" id=""></td>                
+            </tr>
+            <tr>
+                <th colspan="2">시나리오 분류</th>
+                <th colspan="2">시나리오 세부분류</th>
+                <th colspan="2">시나리오 사용여부</th>                
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="selectbox" style="width:98%">
+                        <select>
+                            <option value="">범죄</option>
+                            <option value="">범죄</option>
+                            <option value="">범죄</option>
+                            <option value="">범죄</option>
+                            <option value="">범죄</option>
+                        </select>
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div class="selectbox" style="width:98%">
+                        <select>
+                            <option value="">성범죄</option>
+                            <option value="">성범죄</option>
+                            <option value="">성범죄</option>
+                            <option value="">성범죄</option>
+                        </select>
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div class="selectbox" style="width:100%">
+                        <select>
+                            <option value="">성범죄</option>
+                            <option value="">성범죄</option>
+                            <option value="">성범죄</option>
+                            <option value="">성범죄</option>
+                        </select>
+                    </div>
+                </td>                            
+            </tr>
+            <tr>
+                <th colspan="2">접수기관</th>
+                <th colspan="2">이관기관</th>
+                <th colspan="2">공동대응기관</th>                
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="selectbox" style="width:98%">
+                        <select>
+                            <option value="">경찰</option>                         
+                            <option value="">경찰</option>                         
+                            <option value="">경찰</option>                         
+                            <option value="">경찰</option>                         
+                        </select>
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div class="selectbox" style="width:98%">
+                        <select>
+                            <option value="">없음</option>
+                            <option value="">없음</option>
+                            <option value="">없음</option>
+                            <option value="">없음</option>
+                        </select>
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div class="selectbox" style="width:100%">
+                        <select>
+                            <option value="">소방</option>
+                            <option value="">소방</option>
+                            <option value="">소방</option>
+                            <option value="">소방</option>
+                        </select>
+                    </div>
+                </td>                            
+            </tr>
+            <tr>
+                <th>신고전화 유형</th>
+                <th>신고전화 번호</th>
+                <th>가장전화 유형</th>
+                <th>가장전화 번호</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="selectbox" style="width:96%">
+                        <select>
+                            <option value="">휴대폰</option>                           
+                            <option value="">휴대폰</option>                           
+                            <option value="">휴대폰</option>                           
+                        </select>
+                    </div>
+                </td>
+                <td><input type="text" style="width:96%" id=""></td>
+                <td>
+                    <div class="selectbox" style="width:96%">
+                        <select>
+                            <option value="">휴대폰</option>                           
+                            <option value="">휴대폰</option>                           
+                            <option value="">휴대폰</option>                           
+                        </select>
+                    </div>
+                </td>
+                <td><input type="text" style="width:96%" id=""></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>            
+        </div> <!-- inputTable -->
+
+        <div class="titleBtn">
+            <h4>신고전화 주소</h4>
+            <ul class="btn-group">
+                <li><a href="#" class="btn-basic"><i class="icon-cross"></i>주소 추가</a></li>
+            </ul>
+        </div>
+        <div id="inputTable">
+            <table class="column3">
+            <colgroup>
+                <col width="16%">
+                <col width="16%">
+                <col width="17%">
+                <col width="17%">
+                <col width="*">
+                <col width="75px">
+            </colgroup>
+            <tr>
+                <th>측위방법</th>
+                <th>시/도</th>
+                <th>구/군</th>
+                <th>지번</th>
+                <th colspan="2">주소</th>              
+            </tr>
+            <tr>
+                <td>
+                    <div class="selectbox" style="width:98%">
+                        <select>
+                            <option value="">GPS</option>
+                            <option value="">GPS</option>
+                            <option value="">GPS</option>
+                            <option value="">GPS</option>
+                        </select>
+                    </div>                    
+                </td>
+                <td>
+                    <div class="selectbox" style="width:98%">
+                        <select>
+                            <option value="">인천광역시</option>
+                            <option value="">인천광역시</option>
+                            <option value="">인천광역시</option>
+                        </select>
+                    </div>                    
+                </td>
+                <td><input type="text" style="width:98%;" id=""></td>                
+                <td><input type="text" style="width:98%;" id=""></td>                
+                <td><input type="text" style="width:98%;" id=""></td>                
+                <td>
+                    <button type="button" onclick="" class="inputButton"><i class="icon-search"></i><span class="ir">검색</span></button>
+                    <button type="button" onclick="" class="inputButton"><i class="icon-trash"></i><span class="ir">삭제</span></button>
+                </td>
+            </tr>            
+            <tr>
+                <th>측위방법</th>
+                <th>시/도</th>
+                <th>구/군</th>
+                <th>지번</th>
+                <th colspan="2">주소</th>              
+            </tr>
+            <tr>
+                <td>
+                    <div class="selectbox" style="width:98%">
+                        <select>
+                            <option value="">GPS</option>
+                            <option value="">GPS</option>
+                            <option value="">GPS</option>
+                            <option value="">GPS</option>
+                        </select>
+                    </div>                    
+                </td>
+                <td>
+                    <div class="selectbox" style="width:98%">
+                        <select>
+                            <option value="">인천광역시</option>
+                            <option value="">인천광역시</option>
+                            <option value="">인천광역시</option>
+                        </select>
+                    </div>                    
+                </td>
+                <td><input type="text" style="width:98%;" id=""></td>                
+                <td><input type="text" style="width:98%;" id=""></td>                
+                <td><input type="text" style="width:98%;" id=""></td>                
+                <td>
+                    <button type="button" onclick="" class="inputButton"><i class="icon-search"></i><span class="ir">검색</span></button>
+                    <button type="button" onclick="" class="inputButton"><i class="icon-trash"></i><span class="ir">삭제</span></button>
+                </td>
+            </tr>            
+            <tr>
+                <th>측위방법</th>
+                <th>시/도</th>
+                <th>구/군</th>
+                <th>지번</th>
+                <th colspan="2">주소</th>              
+            </tr>
+            <tr>
+                <td>
+                    <div class="selectbox" style="width:98%">
+                        <select>
+                            <option value="">GPS</option>
+                            <option value="">GPS</option>
+                            <option value="">GPS</option>
+                            <option value="">GPS</option>
+                        </select>
+                    </div>                    
+                </td>
+                <td>
+                    <div class="selectbox" style="width:98%">
+                        <select>
+                            <option value="">인천광역시</option>
+                            <option value="">인천광역시</option>
+                            <option value="">인천광역시</option>
+                        </select>
+                    </div>                    
+                </td>
+                <td><input type="text" style="width:98%;" id=""></td>                
+                <td><input type="text" style="width:98%;" id=""></td>                
+                <td><input type="text" style="width:98%;" id=""></td>                
+                <td>
+                    <button type="button" onclick="" class="inputButton"><i class="icon-search"></i><span class="ir">검색</span></button>
+                    <button type="button" onclick="" class="inputButton"><i class="icon-trash"></i><span class="ir">삭제</span></button>
+                </td>
+            </tr>            
+            </table>            
+        </div> <!-- inputTable -->
+
+        <div class="titleBtn">
+            <h4>대상사건 정보</h4>            
+        </div>
+        <!-- 탭시작 -->       
+        <div id="tab01">
+            <ul>
+                <li class="on"><a href="#">개요</a></li>
+                <li><a href="#">사건</a></li>
+                <li><a href="#">신고자</a></li>
+                <li><a href="#">피해자</a></li>
+                <li><a href="#">목격자</a></li>
+                <li><a href="#">용의자</a></li>
+                <li><a href="#">역할별유의사항</a></li>
+                <li><a href="#">시나리오 흐름</a></li>
+            </ul>
+        </div>
+        <div id="tab_cont">
+            <div class="tab_items">
+                
+            </div>
+            <div class="tab_items">
+                
+            </div>
+        </div>
+        <!-- 탭 끝-->
+
+      
+    </section>
 </body>
 </html>

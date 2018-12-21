@@ -224,6 +224,32 @@ section {
 	font-size:18px;
 }
 
+#tab01 {
+	margin-bottom:20px;
+}
+#tab01:before {
+	content:'';
+	display:block;
+	clear:both;
+}
+#tab01:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+#tab01 ul li {
+	float:left;
+	margin-right:50px;
+}
+#tab01 ul li a {
+	font-size:14px;
+	color:#7d7d7d
+}
+#tab01 ul .on a {
+	border-bottom:2px solid #538fc7;
+	color:#538fc7;
+}
+
 /* 그라데이션있는 테이블 */
 .listPaging {
   width: 100%;
@@ -318,8 +344,44 @@ section {
 }
 
 
+#inputTable > table {
+  width: 100%;
+}
+#inputTable > table th {
+  text-align: left;
+  padding: 0 0 5px 0
+}
+#inputTable > table td {
+  vertical-align: top;
+  text-align: left;
+  padding: 0 0 20px 0
+}
 
 
+.titleBtn {
+  position: relative; 
+  margin-top: 40px; 
+  margin-bottom:30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E3E3E3;
+}
+.titleBtn h4 {
+  font-size: 24px;
+  color: #E3E3E3;
+}
+.inputButton {
+  display:inline-block;
+  width: 35px;
+  height: 35px;
+  background: none;
+  border-radius: 4px;
+  border: 1px solid #80A0D5;
+  color: #80A0D5;  
+}
+.inputButton:hover {
+  background: #80A0D5;
+  color: #ffffff;
+}
 
 
 
@@ -336,7 +398,9 @@ section {
 	display:inline-block;
 	margin-left:10px;
 }
-
+.titleBtn .btn-group {
+  bottom: 20px;
+}
 .btn-basic {
 	padding:8px 15px;
 	font-size:14px;
@@ -362,6 +426,52 @@ section {
 }
 
 
+
+/* input style*/
+input[type="text"],input[type="number"],input[type="password"],select {
+	vertical-align:middle;
+	border:solid 1px #d0d0d0;
+	padding:5px;
+	border-radius:5px;
+}
+input[type="text"],input[type="password"],select {
+	height:35px;
+	line-height:32px;
+	padding:5px 20px;
+	font-size:14px;
+	color:#7d7d7d;
+}
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #7d7d7d;
+}
+.selectbox select {
+	border-radius: 5px;	
+	width: 100%;
+	color: #7D7D7D;
+	-webkit-appearance: none;
+	-moz-appearance: none; 
+	appearance: none;      
+  line-height: 150%; 
+  font-size: 16px;
+	border: 1px solid #d0d0d0;
+	background: url(../images/sel_normal.png) no-repeat 95% 50%;
+}
+.selectbox:hover select {
+	color: #7D7D7D;
+	line-height: 150%; 
+	border: 1px solid #7D7D7D;	
+}
+
+
+
+
+
+
+
+
 /* 공통클래스 */
 .ptcolor { color:#538FC7 !important;}
 .circleIcon { border-radius: 50%; border:2px solid #80A0D5; width:62px; height: 62px; display:block; text-align: center; }
@@ -371,3 +481,4 @@ section {
   display:block;
   clear: both;
 }
+.ir { text-indent: -9999em !important; font-size: 0 !important;}
