@@ -67,6 +67,7 @@ header h1 {
 header h2 {
   display: inline-block;
   margin: 57px 0 57px 20px;  
+  padding-left:20px;
   font-size: 36px;
   color: #538fc7;
   border-left: 2px solid #7d7d7d;
@@ -199,9 +200,9 @@ section {
   width:100%;
   max-width:1900px;
   min-width:1026px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   padding:0 20px;
-  background:#cccccc;
+  line-height: 1.5;
 }
 .page_tit {
 	position:relative;
@@ -216,9 +217,157 @@ section {
 .page_tit h3 {
 	float:left;
 	font-size:28px;
-	color:#7d7d7d;
+	
 }
 .page_tit h3>span {
 	margin-left:10px;
 	font-size:18px;
+}
+
+/* 그라데이션있는 테이블 */
+.listPaging {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 5px;
+}
+.listPaging ol {
+  overflow: hidden;
+}
+.listPaging ol li {
+  display:inline-block;
+  margin-left: 2px;
+}
+.listPaging ol li a {
+  display: block;
+  padding: 5px;
+  font-size: 14px;
+  color: #7d7d7d;
+
+  background: #F8F8F8;
+  border-radius: 4px;
+  border: 1px solid #E3E3E3;
+}
+.listPaging ol li.on a {
+  color: #ffffff;
+  background: #538FC7;
+  border: 1px solid #538FC7;
+}
+.listPaging ol li.next a,
+.listPaging ol li.prev a {
+  color: #e3e3e3;
+}
+.gradientTable {
+  border-radius: 8px;
+  width:100%;
+  padding: 0 10px 10px;
+  background: #28436e;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #28436e 0%, #5674a4 52%, #80a0d5 98%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #28436e 0%, #5674a4 52%, #80a0d5 98%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #28436e 0%, #5674a4 52%, #80a0d5 98%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28436e', endColorstr='#80a0d5', GradientType=0);
+  /* IE6-9 */  
+}
+.gradientTable table {
+  border-collapse:collapse;
+  border-spacing:0;
+  width:100%;
+}
+.gradientTable th {
+  color: #ffffff;
+  font-size: 14px;
+  padding:15px 10px;
+  overflow:hidden;
+  word-break:keep-all; 
+  text-align: left; 
+}
+.gradientTable tbody td {
+  background: #F8F8F8;
+  vertical-align:top;
+  font-size: 14px;
+  padding:8px 10px;
+  overflow:hidden;
+  word-break:keep-all; 
+  border-bottom: 1px solid #28436E;
+}
+.gradientTable tbody tr:last-child td {
+  border-bottom: none;
+}
+.tbl_tit {
+  font-size:16px;
+  font-weight: bold;
+  color: #80A0D5;
+}
+.nmaltxt {
+	font-size:12px;
+}
+.gradientTable .smpt {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #80A0D5;
+}
+
+.gradientTable tbody tr:hover td {
+  background: #FFFDEE;
+}
+.gradientTable tbody tr:hover td .tbl_tit{
+  color: #28436E;
+}
+
+
+
+
+
+
+
+
+
+/* 버튼그룹 */
+.btn-group {
+	display:block;
+	position:absolute;
+	right:0;
+	bottom:-5px;
+}
+[class^="btn-group"]  li {
+	display:inline-block;
+	margin-left:10px;
+}
+
+.btn-basic {
+	padding:8px 15px;
+	font-size:14px;
+	color:#538fc7;
+	border-radius:5px;
+	border:1px solid #538fc7;
+	background: #ffffff;
+}
+.btn-basic:hover {
+	color:#ffffff;
+	background:#538FC7;
+	border-radius:5px;
+	border:1px solid #538fc7;
+}
+.btn-basic:active {
+	color:#ffffff;
+	background:#4983b9;
+	border-radius:5px;
+	border:1px solid #4983b9;
+}
+.btn-basic i {
+	margin-right:5px;
+}
+
+
+/* 공통클래스 */
+.ptcolor { color:#538FC7 !important;}
+.circleIcon { border-radius: 50%; border:2px solid #80A0D5; width:62px; height: 62px; display:block; text-align: center; }
+.circleIcon i { font-size:37px; color: #80A0D5; display: block; margin-top:10px;}
+.cf {
+  content:'';
+  display:block;
+  clear: both;
 }
