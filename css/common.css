@@ -1,0 +1,194 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/NotoSansKR-Thin.woff2) format('woff2'), url(../fonts/NotoSansKR-Thin.woff) format('woff'), url(../fonts/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/NotoSansKR-Light.woff2) format('woff2'), url(../fonts/NotoSansKR-Light.woff) format('woff'), url(../fonts/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NotoSansKR-Regular.woff2) format('woff2'), url(../fonts/NotoSansKR-Regular.woff) format('woff'), url(../fonts/NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/NotoSansKR-Medium.woff2) format('woff2'), url(../fonts/NotoSansKR-Medium.woff) format('woff'), url(../fonts/NotoSansKR-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NotoSansKR-Bold.woff2) format('woff2'), url(../fonts/NotoSansKR-Bold.woff) format('woff'), url(../fonts/NotoSansKR-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/NotoSansKR-Black.woff2) format('woff2'), url(../fonts/NotoSansKR-Black.woff) format('woff'), url(../fonts/NotoSansKR-Black.otf) format('opentype');
+}
+* {
+  outline: none;
+}
+*, :after, :before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans KR', dotum, sans-serif;
+  color: #7d7d7d;
+}
+header {
+  width: 100%;
+  min-width:1026px;  
+  margin:0 auto;
+  height: 150px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #E3E3E3
+}
+#header_cont {
+  width:100%;
+  max-width:1900px;
+  margin: 0 auto;
+}
+header h1 {
+  float: left;
+  margin: 48px 0;
+  line-height: 1.5;
+}
+header h2 {
+  display: inline-block;
+  margin: 57px 0 57px 20px;  
+  font-size: 36px;
+  color: #538fc7;
+  border-left: 2px solid #7d7d7d;
+}
+header h1 a {
+  font-size: 36px;
+  font-weight: bold;
+  color: #538fc7;  
+}
+header h1 a i {
+  margin-right:8px;
+}
+header #header_cont .adminmn {
+  position: relative;
+  float: right;
+  width: 140px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+}
+.adminmn {
+  /* Size & position */
+  position: relative;
+  width: 140px;
+  margin: 0;
+  font-size: 22px;
+  color: #538fc7;
+  cursor: pointer;
+}
+.adminmn i {
+  margin-right: 10px;
+}
+.adminmn .dropdown {
+  /* Size & position */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  /* Styles */
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #f8f8f8;
+  border-top: none;
+  border-bottom: none;
+  list-style: none;
+  /* Hiding */
+  max-height: 0;
+  overflow: hidden;
+}
+.adminmn .dropdown li {
+  padding: 0 10px;
+  line-height: 20px;
+  text-align: left;
+}
+.adminmn .dropdown li a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  color: #538FC7;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e6e8ea;
+}
+.adminmn .dropdown li:last-of-type a {
+  border: none;
+}
+.adminmn .dropdown li i {
+  margin-right: 5px;
+  color: inherit;
+  vertical-align: middle;
+}
+section {
+  min-width:1026px;
+  width:100%;
+  max-width:1920px;
+  padding:0 20px;
+}
+
+/* 홈 */
+#index {
+  margin: 150px auto;
+  overflow:hidden;
+}
+#index .menu {
+  width:720px;
+  margin: 0 auto;
+  text-align: center;
+}
+#index .menu li {
+  float:left;
+  margin:10px 5px;
+}
+#index .menu li a {
+  display: block;
+  position: relative;
+  width: 350px;
+  height: 200px;
+  color:#ffffff;  
+  background: #b2c5e5;
+  border-radius: 8px;
+
+}
+#index .menu li a i {
+  line-height:190px;
+  font-size:70px;
+  transition: all 0.4s ease-in 0.1s   
+}
+#index .menu li a span {
+  display: block;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size:18px;
+  font-weight: bold;  
+}
+#index .menu .hover a {
+  background: #80A0D5;
+  
+}
+#index .menu .hover a i {  
+  font-size:85px;
+  transition: all 0.4s ease-in-out 0.1s;
+}
+#index .menu .active a {
+    background: #28436E;
+  }
