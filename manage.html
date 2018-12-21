@@ -5,8 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>긴급신고공동대응 모의훈련 시스템</title>
+    <link href="./css/incon_reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="fonts/smtr/style.css">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script>
+        $(function(){
+            $('#index .menu li').hover(
+                function(){
+                   $(this).addClass('hover');
+                },
+                function(){
+                    $(this).removeClass();
+                }
+            );
+            $('#index .menu li').click(function(){
+                $(this).addClass('active');                
+            });           
+        });   
+    </script>
 </head>
 <body>
-    
+    <header>
+        <div id="header_cont">
+            <h1><a href="#"><i class="icon-laptop"></i>신고통합 모의훈련 시스템</a></h1>
+            <div id="adm_menu" class="adminmn"><span><i class="icon-administrator"></i>관리자</span>
+                <ul class="dropdown">
+                    <li><a href="#"><i class="icon-gear"></i>설정</a></li>
+                    <li><a href="#"><i class="icon-logout"></i>로그아웃</a></li>
+                </ul>
+            </div>
+        </div>  
+    </header> 
+    <section id="index" class="managepage">
+        <ul class="menu">
+            <li class=""><a href="#"><i class="icon-schedule"></i><span>일정</span></a></li>
+            <li class=""><a href="#"><i class="icon-scenario"></i><span>시나리오</span></a></li>
+            <li class=""><a href="#"><i class="icon-teacher"></i><span>강사</span></a></li>
+            <li class=""><a href="#"><i class="icon-student"></i><span>교육대상자</span></a></li>
+            <li class=""><a href="#"><i class="icon-receipt"></i><span>접수대</span></a></li>
+        </ul>
+    </section>    
 </body>
 </html>

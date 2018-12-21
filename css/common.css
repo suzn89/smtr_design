@@ -61,7 +61,7 @@ header {
 }
 header h1 {
   float: left;
-  margin: 48px 0;
+  margin: 48px 0 0 20px;
   line-height: 1.5;
 }
 header h2 {
@@ -190,5 +190,8 @@ section {
   transition: all 0.4s ease-in-out 0.1s;
 }
 #index .menu .active a {
-    background: #28436E;
-  }
+  background: #28436E;
+}
+#index.managepage > .menu {
+  width:1080px
+}
