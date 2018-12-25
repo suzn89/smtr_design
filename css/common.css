@@ -250,6 +250,38 @@ section {
 	color:#538fc7;
 }
 
+/* 기본테이블 */
+.basic_tbl {
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+}
+.basic_tbl td {
+	font-size:14px;
+	padding:10px 10px;
+	color:#7D7D7D;
+	border-bottom:1px solid #F8F8F8;
+	vertical-align:middle;
+}
+.ptcolor {
+	color:#538FC7 !important;
+}
+.basic_tbl th {
+	font-size:14px;
+	text-align:left;
+	padding:10px 10px;
+	color:#7D7D7D;
+	background:#F8F8F8;
+}
+.basic_tbl tr:hover td {
+	background:#80A0D5;
+	color:#fff;
+}
+.basic_tbl tr:hover .yellow {
+  color:#FDFFD9 !important;
+  font-weight: bold;
+}
+
 /* 그라데이션있는 테이블 */
 .listPaging {
   width: 100%;
