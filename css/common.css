@@ -250,6 +250,38 @@ section {
 	color:#538fc7;
 }
 
+/* 기본테이블 */
+.basic_tbl {
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+}
+.basic_tbl td {
+	font-size:14px;
+	padding:10px 10px;
+	color:#7D7D7D;
+	border-bottom:1px solid #F8F8F8;
+	vertical-align:middle;
+}
+.ptcolor {
+	color:#538FC7 !important;
+}
+.basic_tbl th {
+	font-size:14px;
+	text-align:left;
+	padding:10px 10px;
+	color:#7D7D7D;
+	background:#F8F8F8;
+}
+.basic_tbl tr:hover td {
+	background:#80A0D5;
+	color:#fff;
+}
+.basic_tbl tr:hover .yellow {
+  color:#FDFFD9 !important;
+  font-weight: bold;
+}
+
 /* 그라데이션있는 테이블 */
 .listPaging {
   width: 100%;
@@ -436,7 +468,6 @@ input[type="text"],input[type="number"],input[type="password"],select {
 }
 input[type="text"],input[type="password"],select {
 	height:35px;
-	line-height:32px;
 	padding:5px 20px;
 	font-size:14px;
 	color:#7d7d7d;
@@ -457,7 +488,10 @@ input[type="password"]:focus {
   line-height: 150%; 
   font-size: 16px;
 	border: 1px solid #d0d0d0;
-	background: url(../images/sel_normal.png) no-repeat 95% 50%;
+  background: url(../images/sel_normal.png) no-repeat 95% 50%;  
+}
+.selectbox select::-ms-expand {
+  display: none;            /* 화살표 없애기 for IE10, 11*/
 }
 .selectbox:hover select {
 	color: #7D7D7D;
@@ -482,3 +516,4 @@ input[type="password"]:focus {
   clear: both;
 }
 .ir { text-indent: -9999em !important; font-size: 0 !important;}
+.required { color: #C90000; font-size:14px; top:0;}
