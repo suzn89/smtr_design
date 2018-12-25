@@ -468,7 +468,6 @@ input[type="text"],input[type="number"],input[type="password"],select {
 }
 input[type="text"],input[type="password"],select {
 	height:35px;
-	line-height:32px;
 	padding:5px 20px;
 	font-size:14px;
 	color:#7d7d7d;
@@ -489,7 +488,10 @@ input[type="password"]:focus {
   line-height: 150%; 
   font-size: 16px;
 	border: 1px solid #d0d0d0;
-	background: url(../images/sel_normal.png) no-repeat 95% 50%;
+  background: url(../images/sel_normal.png) no-repeat 95% 50%;  
+}
+.selectbox select::-ms-expand {
+  display: none;            /* 화살표 없애기 for IE10, 11*/
 }
 .selectbox:hover select {
 	color: #7D7D7D;
@@ -514,3 +516,4 @@ input[type="password"]:focus {
   clear: both;
 }
 .ir { text-indent: -9999em !important; font-size: 0 !important;}
+.required { color: #C90000; font-size:14px; top:0;}
