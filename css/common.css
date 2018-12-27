@@ -207,7 +207,7 @@ section {
 .page_tit {
 	position:relative;
 	height:40px;
-	margin-bottom:40px;
+	margin-bottom:100px;
 }
 .page_tit::after {
 	display:block;
@@ -360,7 +360,8 @@ section {
 	padding:10px 10px;
 	color:#7D7D7D;
 	border-bottom:1px solid #F8F8F8;
-	vertical-align:middle;
+  vertical-align:middle;
+  word-break: keep-all;
 }
 .ptcolor {
 	color:#538FC7 !important;
@@ -385,7 +386,7 @@ section {
 .listPaging {
   width: 100%;
   text-align: right;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .listPaging ol {
   overflow: hidden;
@@ -616,3 +617,7 @@ input[type="password"]:focus {
 }
 .ir { text-indent: -9999em !important; font-size: 0 !important;}
 .required { color: #C90000; font-size:14px; top:0;}
+
+.txc {text-align: center;}
+.txr {text-align: right;}
+.txl {text-align: left;}
