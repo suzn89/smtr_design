@@ -250,6 +250,105 @@ section {
 	color:#538fc7;
 }
 
+.consolbox {
+  position: relative;
+  float:left;
+  width:49%;
+  margin-right:2%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border:1px solid #e3e3e3;
+}
+.consolbox:nth-child(2n+1) {
+  margin-right:0;
+}
+.consolbox .consolleft {
+  position: absolute;
+  text-align: center;
+  height:100%;
+  width:30%;
+  background:#FAFAFA;
+  border-right:1px solid #e3e3e3;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.consolbox .consolleft span.num {
+    font-size: 80px;
+    color: #e3e3e3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.consolbox .consolright {
+  margin-left:30%;
+  padding:20px 20px 30px 20px;
+  overflow: hidden;
+}
+.consolbox .consolright h4 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color:#e3e3e3;
+}
+.consolbox .consolright dl {
+  position: relative;
+  float:left; 
+  min-width:240px; 
+  width:50%;
+  padding-left: 60px; 
+  margin-bottom:10px;
+}
+.consolbox .consolright dl.phone:before {
+  position: absolute;
+  font-family: smtr;
+  color:#e3e3e3;
+  top:0;
+  left:0px;
+  font-size:40px;
+  content: "\e926";
+}
+.consolbox .consolright dl.ip:before {
+  position: absolute;
+  font-family: smtr;
+  color:#e3e3e3;
+  top:0;
+  left:0px;
+  font-size:40px;
+  content: "\e910";
+}
+.consolbox .consolright dl dt {
+  float: left;  
+  color: #e3e3e3;
+  margin-right: 5px;
+}
+/* .consolbox .consolleft:before {content:'';display:inline-block;height:100%;vertical-align:middle;}
+.consolbox .consolleft span.num {display:inline-block;vertical-align:middle;} */
+
+.consolbox .btn_edit {
+  position: absolute;
+  right:20px;
+  top:15px;
+  display: inline-block;
+  padding: 5px 20px;
+  font-style: 14px;
+  color: #80A0D5;
+  border-radius: 5px;
+  border:1px solid #80A0D5;  
+}
+.consolbox .btn_edit:hover {
+  background: #80a0d5;
+  color:#ffffff;
+}
+.consolbox:hover {
+  border:1px solid #80A0D5;
+}
+.consolbox:hover .consolleft {
+  background:#80a0d5;  
+}
+.consolbox:hover .consolleft .num {
+  color: #ffffff;
+}
+
 /* 기본테이블 */
 .basic_tbl {
 	border-collapse:collapse;
