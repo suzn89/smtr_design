@@ -207,7 +207,7 @@ section {
 .page_tit {
 	position:relative;
 	height:40px;
-	margin-bottom:100px;
+	margin-bottom:40px;
 }
 .page_tit::after {
 	display:block;
@@ -249,7 +249,9 @@ section {
 	border-bottom:2px solid #538fc7;
 	color:#538fc7;
 }
-
+.consolboxWrap {
+  margin-top:60px;
+}
 .consolbox {
   position: relative;
   float:left;
@@ -259,7 +261,7 @@ section {
   border-radius: 8px;
   border:1px solid #e3e3e3;
 }
-.consolbox:nth-child(2n+1) {
+.consolbox:nth-child(2n) {
   margin-right:0;
 }
 .consolbox .consolleft {
@@ -383,7 +385,13 @@ section {
 }
 
 /* 그라데이션있는 테이블 */
+.listPaging:before {
+  display: block;
+  content:'';
+  clear: both;
+}
 .listPaging {
+  margin-top: 70px;
   width: 100%;
   text-align: right;
   margin-bottom: 10px;
@@ -621,3 +629,7 @@ input[type="password"]:focus {
 .txc {text-align: center;}
 .txr {text-align: right;}
 .txl {text-align: left;}
+
+
+
+.mb100 { margin-bottom : 100px;}
