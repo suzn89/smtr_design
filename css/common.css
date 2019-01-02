@@ -1356,6 +1356,9 @@ input[type="password"]:focus {
 .view__card li:nth-child(5n) {
 	margin-right: 0;
 }
+.view__card .disnone {
+  display: none;
+}
 
 
 
