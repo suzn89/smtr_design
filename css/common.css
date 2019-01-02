@@ -623,7 +623,7 @@ section {
 }
 .radio-con input[type="radio"] {
 	position:absolute;
-	left:-1000px;
+	left:-9000px;
 }
 .radio-con label {
 	color:#E3E3E3;
@@ -663,6 +663,20 @@ section {
 .radio-con input[type="radio"]:disabled+label {
 	color:#c0c4c8;
 }
+.ra_gray {
+  position: inherit;
+  margin-top: 30px;
+  border-color: #e3e3e3;
+}
+.ra_gray label {
+  color: #7d7d7d;
+  font-size: 18px;
+}
+.ra_gray input[type="radio"]:checked+label {
+  background: #fafafa;
+  color: #7d7d7d;
+}
+
 .row5li li {
 	position:relative;
 	float:left;
@@ -739,7 +753,256 @@ section {
   font-size:14px;
   background: none;
 }
+.row5li li .modify:hover {
+  border: 1px solid rgba(255,255,255,1);
+}
 
+.topbox {
+  width:100%;
+  position: relative;
+}
+.topbox > h3 {
+  font-size:28px;
+  font-weight: bold;
+}
+.topbox p {
+  color: #e3e3e3;
+}
+.topbox span {
+  color: #7d7d7d;
+}
+.topbox .timedate {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topbox dl {
+  float:left;
+  position: relative;  
+  padding:5px 20px;
+  border-right: 1px solid #e3e3e3;  
+}
+.topbox dl:last-child{
+  border-right:none;
+}
+.topbox dl dt,dd {
+  color:#e3e3e3;
+  font-weight: bold;  
+}
+.topbox dl dt {
+  font-size: 18px;
+}
+.topbox dl dd {
+  font-size:28px;
+}
+.topbox .tr_end {
+  display: inline-block;
+  margin-left:15px;
+  padding:15px 30px;
+  color:#ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 3px;  
+  background: rgba(128,160,213,0.3)
+}
+.topbox .tr_end:hover {
+  background: rgba(128,160,213,1)
+}
+.topbox .tr_end:active, .topbox .tr_end:active {
+  background: #28436E;
+}
+.tr_viewbox {
+  overflow: hidden;
+  width:100%;
+  padding: 15px 20px;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+  margin-top: 50px;
+}
+.tr_viewbox dl {
+  float:left;
+  height:60px;
+  padding: 0 30px;
+  border-right:1px solid #e3e3e3;
+}
+.tr_viewbox dt {
+  color: #e3e3e3;
+  font-size: 18px;  
+}
+.tr_viewbox dd {
+  font-size: 22px;
+  font-weight: bold;
+}
+.tr_viewbox dd .smt {
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+.tr_viewbox .zoom {
+  float: right;
+  color: #e3e3e3;
+  font-size: 22px;
+  line-height: 62px;
+}
+.timeline {
+  position: relative;
+  float: left;
+  width:58%;
+  height: 610px;    
+  margin-top: 20px;
+  margin-right: 2%;  
+  padding: 20px 15px;
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+}
+.timeline h4, .detail h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.timeline h4 span, .detail h4 span {
+  font-size: 14px;
+}
+.timeline .icons01 {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+.timeline .icons01 li {
+  display:block;
+  float: left;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  background: #7d7d7d;
+  border-radius: 5px;
+}
+.detail {
+  float: left;
+  width:40%;  
+  height: 610px;
+  margin-top: 20px;
+  padding: 20px 15px;
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+}
+.detail .detailbox {
+  width: 100%;
+  margin-top: 20px;
+  padding-right: 10px;
+  line-height: 160%;
+  height: 440px;
+  overflow-y: scroll;
+  font-size: 18px;  
+}
+
+.timeline .scrollwrap > table {
+  width: 100%;
+  margin-top: 30px;
+}
+.timeline .scrollwrap > table td {
+  padding: 5px 0;
+  font-size: 18px;
+  vertical-align: middle;
+  word-break: keep-all  
+}
+.timeline .scrollwrap > table td i {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  background: #7d7d7d;
+  border-radius: 5px;
+}
+.timeline .scrollwrap > table td.leftalign dl {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-radius: 8px 0 0 8px;
+  border-left: 3px solid #7d7d7d;
+  border-bottom: 1px solid #e3e3e3;
+}
+.timeline .scrollwrap > table td.leftalign dl:after {
+  content: '';
+  position: absolute;
+  left: -13px;
+  top:8px;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid #7d7d7d;
+  border-bottom: 5px solid transparent;
+}
+.timeline .scrollwrap > table .rightalign {
+  text-align: right;
+}
+.timeline .scrollwrap > table td.rightalign dl {
+  position: relative;
+  float: right;
+  text-align: right;
+  margin-right: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border-radius: 0px 8px 8px 0px;
+  border-right: 3px solid #7d7d7d;
+  border-bottom: 1px solid #e3e3e3;
+}
+.timeline .scrollwrap > table td.rightalign dl:after {
+  content: '';
+  position: absolute;
+  right: -13px;
+  top:8px;
+  border-top: 5px solid transparent;
+  border-left: 5px solid #7d7d7d;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.timeline .scrollwrap > table td dl dt {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28436E;  
+}
+.timeline .scrollwrap > table td dl dd {
+  font-size: 14px;
+  font-weight: normal;
+  color: #7d7d7d;  
+}
+.timeline .scrollwrap > table td i.co_red {
+  background: #C90000;
+}
+.timeline .scrollwrap > table td.co_red dl {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-radius: 8px 0 0 8px;
+  border-left: 3px solid #C90000;
+  border-bottom: 1px solid #C90000;
+}
+.timeline .scrollwrap > table td.co_red dl:after {
+  content: '';
+  position: absolute;
+  left: -13px;
+  top:8px;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid #C90000;
+  border-bottom: 5px solid transparent;
+}
+.scrollwrap {
+  height: 500px;
+  margin-top: 30px;
+  overflow-y: scroll;
+}
 
 
 /* 버튼그룹 */
@@ -830,7 +1093,7 @@ input[type="password"]:focus {
 
 
 /* 공통클래스 */
-.ptcolor { color:#538FC7 !important;}
+.ptcolor { color:#80A0D5 !important;}
 .circleIcon { border-radius: 50%; border:2px solid #80A0D5; width:62px; height: 62px; display:block; text-align: center; }
 .circleIcon i { font-size:37px; color: #80A0D5; display: block; margin-top:10px;}
 .cf {
@@ -840,10 +1103,18 @@ input[type="password"]:focus {
 }
 .ir { text-indent: -9999em !important; font-size: 0 !important;}
 .required { color: #C90000; font-size:14px; top:0;}
+.boldtxt {
+  color: #7d7d7d;
+}
 
 .txc {text-align: center;}
 .txr {text-align: right;}
 .txl {text-align: left;}
+
+.bl0 { border-left:0 !important;}
+.br0 { border-right:0 !important;}
+.bt0 { border-top:0 !important;}
+.bb0 { border-bottom:0 !important;}
 
 
 

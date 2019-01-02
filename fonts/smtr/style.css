@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'smtr';
-  src:  url('fonts/smtr.eot?zclmdj');
-  src:  url('fonts/smtr.eot?zclmdj#iefix') format('embedded-opentype'),
-    url('fonts/smtr.ttf?zclmdj') format('truetype'),
-    url('fonts/smtr.woff?zclmdj') format('woff'),
-    url('fonts/smtr.svg?zclmdj#smtr') format('svg');
+  src:  url('fonts/smtr.eot?siqsjz');
+  src:  url('fonts/smtr.eot?siqsjz#iefix') format('embedded-opentype'),
+    url('fonts/smtr.ttf?siqsjz') format('truetype'),
+    url('fonts/smtr.woff?siqsjz') format('woff'),
+    url('fonts/smtr.svg?siqsjz#smtr') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,7 +25,25 @@
 }
 
 .icon-call01:before {
-  content: "\e926";
+  content: "\e91c";
+}
+.icon-call02:before {
+  content: "\e91d";
+}
+.icon-call03:before {
+  content: "\e91e";
+}
+.icon-zoom:before {
+  content: "\e91f";
+}
+.icon-message:before {
+  content: "\e920";
+}
+.icon-monitor01:before {
+  content: "\e921";
+}
+.icon-cs01:before {
+  content: "\e942";
 }
 .icon-Backward-arrow-small:before {
   content: "\e917";
