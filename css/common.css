@@ -776,6 +776,11 @@ section {
   right: 0;
   top: 0;
 }
+.topbox .timedate .back {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e3e3e3;  
+}
 .topbox dl {
   float:left;
   position: relative;  
@@ -844,6 +849,7 @@ section {
   font-size: 22px;
   line-height: 62px;
 }
+
 .timeline {
   position: relative;
   float: left;
@@ -881,6 +887,7 @@ section {
   border-radius: 5px;
 }
 .detail {
+  position: relative;
   float: left;
   width:40%;  
   height: 610px;
@@ -1003,6 +1010,147 @@ section {
   margin-top: 30px;
   overflow-y: scroll;
 }
+
+.tr_viewbox_gview {
+  overflow: hidden;
+  width:100%;
+  padding: 15px 20px;
+  background: #80A0D5;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3)
+}
+.tr_viewbox_gview dl {
+  position: relative;
+  padding: 0 40px; 
+  float: left; 
+}
+.tr_viewbox_gview dl:after {
+  content: '';
+  position: absolute;
+  height:70px;
+  border-right: 1px solid #ffffff;
+  right: 0;
+  top: 30px;
+  opacity: 0.6;
+}
+.tr_viewbox_gview dt {
+  color: #ffffff;
+  opacity: 0.6;
+  font-size: 22px;
+  font-weight: bold;
+}
+.tr_viewbox_gview dd {
+  color: #ffffff;
+  opacity: 0.6;
+  font-size: 60px;
+  font-weight: bold;  
+}
+.tr_viewbox_gview dd sub {
+  font-size: 15px;
+}
+.gview::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  height:90px;
+  width: 100%;
+  background: #e3e3e3;
+  z-index: -10;
+}
+.timeline h4, .detail h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.timeline h4 span, .detail h4 span {
+  font-size: 22px;
+}
+.timeline .icons01 {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+.timeline .icons01 li {
+  display:block;
+  float: left;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  background: #7d7d7d;
+  border-radius: 5px;
+}
+
+.timeline.gview {
+  width: 68%
+}
+.detail.gview {
+  width: 30%
+}
+.detail.gview .detailbox {
+  margin-top: 30px;
+  font-size: 30px;  
+  height: 500px;
+}
+.timeline.gview .scrollwrap > table {
+  width: 100%;
+  margin-top: 30px;
+}
+.timeline.gview .scrollwrap > table td {
+  padding: 5px 0;
+  font-size: 22px;
+  vertical-align: middle;
+  word-break: keep-all  
+}
+.timeline.gview .scrollwrap > table td i {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 45px;
+  color: #ffffff;
+  background: #7d7d7d;
+  border-radius: 5px;
+}
+.timeline.gview .scrollwrap > table td dl dt {
+  font-size: 22px;
+  font-weight: bold;
+  color: #28436E;  
+}
+.timeline.gview .scrollwrap > table td dl dd {
+  font-size: 22px;
+  font-weight: normal;
+  color: #7d7d7d;  
+}
+.timeline.gview .scrollwrap > table td i.co_red {
+  background: #C90000;
+}
+.timeline.gview .scrollwrap > table td.co_red dl {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-radius: 8px 0 0 8px;
+  border-left: 3px solid #C90000;
+  border-bottom: 1px solid #C90000;
+}
+.timeline.gview .scrollwrap > table td.co_red dl:after {
+  content: '';
+  position: absolute;
+  left: -13px;
+  top:8px;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid #C90000;
+  border-bottom: 5px solid transparent;
+}
+
 
 
 /* 버튼그룹 */

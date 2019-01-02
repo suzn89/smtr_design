@@ -1,12 +1,186 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>긴급신고공동대응 모의훈련 시스템</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>긴급신고공동대응 모의훈련 시스템</title>
+  <link href="../css/incon_reset.css" rel="stylesheet" type="text/css">
+  <link href="../css/common.css" rel="stylesheet">
+  <link href="../fonts/smtr/style.css" rel="stylesheet" type="text/css">
+  <script src="../js/jquery-2.1.3.min.js">
+  </script>
 </head>
 <body>
-    
+  <header>
+    <div id="header_cont">
+      <h1><a href="#"><i class="icon-laptop"></i>신고통합 모의훈련 시스템</a></h1>
+      <h2>훈련</h2>
+      <div class="adminmn" id="adm_menu">
+        <span><i class="icon-administrator"></i>관리자</span>
+        <ul class="dropdown">
+          <li>
+            <a href="#"><i class="icon-gear"></i>설정</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-logout"></i>로그아웃</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section id="contents">
+    <div class="topbox">
+      <h3>성폭력 경찰 접수 소방 공동대응</h3>
+      <div class="timedate">
+        <a class="back" href="#">뒤로</a>
+      </div><!-- // timedate -->
+    </div><!-- // topbox -->
+    <div class="tr_viewbox_gview">
+      <dl>
+        <dt>사건유형</dt>
+        <dd>범죄</dd>
+      </dl>
+      <dl>
+        <dt>접수기관</dt>
+        <dd>소방</dd>
+      </dl>
+      <dl>
+        <dt>이관기관</dt>
+        <dd></dd>
+      </dl>
+      <dl>
+        <dt>공동대응 기관</dt>
+        <dd>경찰</dd>
+      </dl>
+      <dl>
+        <dt>시작시간</dt>
+        <dd>16:30:21</dd>
+      </dl>
+      <dl>
+        <dt>경과시간</dt>
+        <dd>30<sub>초</sub></dd>
+      </dl>
+    </div><!-- // tr_viewbox -->
+    <div class="timeline gview">
+      <h4 class="boldtit">신고접수 활동 <span>타임라인</span></h4>
+      <div class="scrollwrap">
+        <table>
+          <colgroup>
+            <col width="100px">
+            <col width="80px">
+            <col width="*">
+            <col width="80px">
+            <col width="100px">
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>10:30:14</td>
+              <td><i class="icon-monitor"></i></td>
+              <td class="leftalign">
+                <dl>
+                  <dt>1번 수보대</dt>
+                  <dd>로그인</dd>
+                </dl>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>10:30:14</td>
+              <td><i class="icon-call02"></i></td>
+              <td class="leftalign">
+                <dl>
+                  <dt>1번 수보대</dt>
+                  <dd>착신</dd>
+                </dl>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>10:30:14</td>
+              <td><i class="icon-fireman"></i></td>
+              <td class="leftalign">
+                <dl>
+                  <dt>1번 수보대</dt>
+                  <dd>네 119입니다</dd>
+                </dl>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>10:30:14</td>
+              <td><i class="icon-call03"></i></td>
+              <td class="leftalign">
+                <dl>
+                  <dt>1번 수보대</dt>
+                  <dd>네 여기 청아람아파트 앞인데요 불이 났어요</dd>
+                </dl>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>10:30:14</td>
+              <td><i class="icon-monitor"></i></td>
+              <td class="leftalign">
+                <dl>
+                  <dt>1번 수보대</dt>
+                  <dd>재난분류</dd>
+                </dl>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>10:30:14</td>
+              <td><i class="icon-fireman"></i></td>
+              <td class="leftalign">
+                <dl>
+                  <dt>1번 수보대</dt>
+                  <dd>불이 난 정확한 위치를 말해주시겠습니까</dd>
+                </dl>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="rightalign">
+                <dl>
+                  <dt>1번 수보대</dt>
+                  <dd>청아람 아파트 앞에 피자집이 있는데 여기에서 불이 나고 있습니다</dd>
+                </dl>
+              </td>
+              <td><i class="icon-call03"></i></td>
+              <td class="rightalign">10:30:14</td>
+            </tr>
+            <tr>
+              <td>10:30:14</td>
+              <td><i class="icon-monitor co_red"></i></td>
+              <td class="leftalign co_red">
+                <dl>
+                  <dt>1번 수보대</dt>
+                  <dd>재난위치 변경</dd>
+                </dl>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- // scrollwrap -->
+    </div><!-- // timeline -->
+    <div class="detail gview">
+      <h4 class="boldtit">사건정보 <span>개요</span></h4>
+      <div class="detailbox">
+        밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황.<br>
+        범죄 장소에서 찔린 유리 조각이 피해자의 몸에서 제거되지 않은 상태이며 범인 도주 후 피해자가 직접 경찰에 신고 함.
+      </div>
+    </div><!-- // detail -->
+  </section>
 </body>
 </html>
