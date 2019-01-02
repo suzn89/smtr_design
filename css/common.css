@@ -250,6 +250,17 @@ section {
 	border-bottom:2px solid #538fc7;
 	color:#538fc7;
 }
+#tab01 ul li i {
+	color:#D86E74;
+	vertical-align: middle;
+}
+#tab01 ul .on sup {
+	color:#538fc7;
+}
+#tab01 ul .on a {
+	border-bottom:2px solid #538fc7;
+	color:#538fc7;
+}
 .consolboxWrap {
   margin-top:60px;
 }
@@ -790,7 +801,7 @@ section {
 .topbox dl:last-child{
   border-right:none;
 }
-.topbox dl dt,dd {
+.topbox dl dt, .topbox dl dd {
   color:#e3e3e3;
   font-weight: bold;  
 }
@@ -1193,6 +1204,22 @@ section {
 
 
 
+button {
+	border:none;
+	background:transparent;
+	cursor:pointer;
+	width:auto;
+	overflow:visible;
+	display:inline-block;
+	zoom:1
+}
+button::-moz-focus-inner {
+	border:0;
+	padding:0;
+	margin:0
+}
+
+
 /* input style*/
 input[type="text"],input[type="number"],input[type="password"],select {
 	vertical-align:middle;
@@ -1232,8 +1259,103 @@ input[type="password"]:focus {
 	line-height: 150%; 
 	border: 1px solid #7D7D7D;	
 }
+#tab_cont .boxcon {
+	padding:20px;
+	border-radius:5px;
+	border:1px solid #E3E3E3;
+	overflow:hidden;
+}
+/* 리스트 보기 방식 변경 */
+.viewtype {
+	text-align: right;
+	font-size: 20px;
+}
+.viewtype button {
+	color: #e3e3e3;
+}
+.viewtype button:hover {
+	color: #dbeef8
+}
+.viewtype button:active,
+.viewtype button:focus {
+	color: #538FC7
+}
+.viewtype .active {
+	color:#538FC7
+}
 
-
+[class^="view__"] {
+	margin-top: 20px;
+}
+[class^="view__"] li {
+	position: relative;
+	border-radius: 5px;
+	border: 1px solid #e3e3e3;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+[class^="view__"] li span {
+	color:#ffffff;
+	font-size: 100px;
+	background: #e3e3e3;
+	display: block;
+	float: left;
+	text-align: center;
+	
+}
+[class^="view__"] li:hover span,
+[class^="view__"] li:focus span {
+	background: #80A0D5
+}
+[class^="view__"] li:active span {
+	background: #28436E
+}
+.view__list li span {
+	width: 150px;
+  height: 150px;
+  margin-right: 15px;
+}
+.view__card li span {
+	width: 300px;
+	height: 150px;
+}
+[class^="view__"] li span i {
+  /* vertical-align: text-bottom; */
+  vertical-align: baseline;
+}
+.view__list li dl {	
+	margin: 15px 15px 15px 0px;
+}
+.view__card li dl {
+	float: left;
+	margin: 15px;
+}
+[class^="view__"] li dl dt {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+[class^="view__"] li dl dd {
+	font-size: 14px;
+	color: #e3e3e3;
+	line-height: 150%;
+}
+[class^="view__"] .active span {
+	background: #538FC7
+}
+.view__list .btn-pbasic {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	margin-top: -17px;
+}
+.view__card li {
+	width:300px;
+	float: left;
+	margin-right: 14px;
+}
+.view__card li:nth-child(5n) {
+	margin-right: 0;
+}
 
 
 
@@ -1244,17 +1366,16 @@ input[type="password"]:focus {
 .ptcolor { color:#80A0D5 !important;}
 .circleIcon { border-radius: 50%; border:2px solid #80A0D5; width:62px; height: 62px; display:block; text-align: center; }
 .circleIcon i { font-size:37px; color: #80A0D5; display: block; margin-top:10px;}
-.cf {
+.cf::after {
   content:'';
   display:block;
   clear: both;
 }
 .ir { text-indent: -9999em !important; font-size: 0 !important;}
 .required { color: #C90000; font-size:14px; top:0;}
-.boldtxt {
-  color: #7d7d7d;
-}
+.boldtxt {  color: #7d7d7d;}
 
+.fl {float: left !important}
 .txc {text-align: center;}
 .txr {text-align: right;}
 .txl {text-align: left;}
