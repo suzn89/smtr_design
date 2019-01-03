@@ -1443,6 +1443,52 @@ input[type="password"]:focus {
 
 
 
+/* 레이어 팝업 (alert) 관련 */
+[id^="warn_layer"] {
+  position:absolute;
+	width:380px;
+	padding:15px 17px;
+  border-radius:5px;
+  -moz-box-shadow:0px 1px 10px #f8f8f8;
+	-webkit-box-shadow:0px 1px 10px #f8f8f8;
+	box-shadow:0px 1px 10px #f8f8f8;
+	left:50%;
+	top:230px;
+	z-index:999;
+	margin-left:-190px;
+}
+[id^="warn_layer"] h5 {
+  margin-bottom:10px;
+	font-size:22px;
+}
+[id^="warn_layer"] p {	
+  font-size:14px;
+	color:#7d7d7d;
+}
+[id^="warn_layer"] .closePop {	
+	outline:none;
+	position:absolute;
+	right:10px;
+	top:10px;
+	background:none;
+	border:none;
+	color:#7d7d7d
+}
+
+#warn_layer {
+	background:#F3DEE0;
+}
+#warn_layer h5 {
+	color:#D86E74;
+}
+
+#warn_layer03 {
+	background:#DBEEF8;
+}
+#warn_layer03 h5 {
+	color:#538FC7;
+}
+
 
 /* 공통클래스 */
 .ptcolor { color:#80A0D5 !important;}
