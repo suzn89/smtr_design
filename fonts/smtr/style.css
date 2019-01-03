@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'smtr';
-  src:  url('fonts/smtr.eot?alm7vm');
-  src:  url('fonts/smtr.eot?alm7vm#iefix') format('embedded-opentype'),
-    url('fonts/smtr.ttf?alm7vm') format('truetype'),
-    url('fonts/smtr.woff?alm7vm') format('woff'),
-    url('fonts/smtr.svg?alm7vm#smtr') format('svg');
+  src:  url('fonts/smtr.eot?ry6k4x');
+  src:  url('fonts/smtr.eot?ry6k4x#iefix') format('embedded-opentype'),
+    url('fonts/smtr.ttf?ry6k4x') format('truetype'),
+    url('fonts/smtr.woff?ry6k4x') format('woff'),
+    url('fonts/smtr.svg?ry6k4x#smtr') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -50,6 +50,9 @@
 }
 .icon-monitor01:before {
   content: "\e921";
+}
+.icon-policeman:before {
+  content: "\e935";
 }
 .icon-cs01:before {
   content: "\e942";
