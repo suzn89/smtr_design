@@ -873,17 +873,26 @@ section {
 .topbox > h3 {
   font-size:28px;
   font-weight: bold;
+  margin: 0;
+}
+.topbox > h3 > span {
+  font-size: 24px;
+  margin-left: 10px;
+  color:#7d7d7d;
+  font-weight: normal;
 }
 .topbox p {
-  color: #e3e3e3;
+  color: #7d7d7d;
+  margin: 0;
 }
 .topbox span {
-  color: #7d7d7d;
+  color: #e3e3e3;
 }
 .topbox .timedate {
   position: absolute;
   right: 0;
   top: 0;
+  margin: 0;
 }
 .topbox .timedate .back {
   font-size: 28px;
@@ -909,21 +918,40 @@ section {
 .topbox dl dd {
   font-size:28px;
 }
-.topbox .tr_end {
+.topbox.review {
+  margin-bottom: 50px;
+}
+.topbox.review dl dd {
+  color: #7d7d7d;
+}
+[class^="butn_basic_"] {
   display: inline-block;
   margin-left:15px;
   padding:15px 30px;
-  color:#ffffff;
   font-size: 22px;
   font-weight: bold;
-  border-radius: 3px;  
-  background: rgba(128,160,213,0.3)
+  border-radius: 3px;
+  border:1px solid;
 }
-.topbox .tr_end:hover {
-  background: rgba(128,160,213,1)
+.butn_basic_nonde {
+  color:#7d7d7d;
+  background: #ffffff;
+  border: 1px solid #7d7d7d;
 }
-.topbox .tr_end:active, .topbox .tr_end:active {
+.butn_basic_default {
+  color:#ffffff;
+  background: rgba(128,160,213,0.3);
+  border-color:rgba(128,160,213,0.1);
+}
+[class^="butn_basic_"]:hover {
+  background: rgba(128,160,213,1);
+  color:#ffffff;
+  border-color: rgba(128,160,213,1);
+}
+[class^="butn_basic_"]:active {
   background: #28436E;
+  color:#ffffff;
+  border-color:#28436E;
 }
 .tr_viewbox {
   overflow: hidden;
@@ -1260,6 +1288,145 @@ section {
   border-bottom: 5px solid transparent;
 }
 
+.review_col3 {
+  position: relative;
+  float:left;
+  width: 32%;
+  min-height:230px;
+  margin-right:2%;
+  padding: 20px;
+  border:1px solid #e3e3e3; 
+  color: #e3e3e3;
+}
+.review_col3 .instit {
+  font-size: 22px;
+  font-weight: bold;
+}
+.review_col3 .bigtxt {
+  color:#80A0D5;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+.review_col3 > ul {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.review_col3 > ul > li {
+  position: relative;
+  float:left;  
+  font-size:18px;  
+  text-align: center;
+  color: #e3e3e3 !important;
+}
+.review_col3 > ul > li i {
+  font-size: 36px;
+}
+.review_col3 > ul > .bgmonitor {
+  width: 44px;
+  margin-right:5px;  
+}
+.review_col3 > ul > .bgmonitor:after {
+  position: absolute;
+  font-family: smtr;
+  color:#e3e3e3;
+  top:-7px;
+  left:0px;
+  font-size:36px;
+  content: "\e910"
+}
+.review_col3 dl {
+  float:right;
+}
+.review_col3 dl dt {
+  font-size:22px;    
+  text-align: right;
+}
+.review_col3 dl dd {
+  font-size:18px;
+  text-align: right;    
+}
+.review_col3.pntcolor {
+  color: #80a0d5
+}
+.basic_box {
+  clear: both;
+  float:left;
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  padding: 30px;
+  margin-top: 20px;
+  min-height: 500px;
+}
+.basic_box > ul {
+  display:block;
+  text-align: right;
+  width:100%;
+  margin-bottom: 40px;
+}
+.basic_box > ul li {
+  display: inline-block;
+  position: relative;
+}
+.basic_box > ul li a {
+  padding:0 10px;
+  color: #7d7d7d;
+  font-weight: bold;
+}
+.basic_box > ul li a.active {
+  color: #80a0d5;
+}
+.basic_box > ul li:first-child a:after {
+  content: '';
+  position: absolute;
+  border-right:1px solid #e3e3e3;
+  height:15px;
+  right: 0;
+  top: 5px;
+}
+.basic_box div ul {
+  padding-left: 120px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.basic_box div ul li {
+  list-style-type: disc;
+  font-size: 22px;
+  font-weight: bold;
+}
+.basic_box .per01:after {
+  position: absolute;
+  font-family: smtr;
+  color:#7d7d7d;
+  top:0px;
+  left:0px;
+  font-size:70px;
+  content: "\e91e"
+}
+.basic_box .per02:after {
+  position: absolute;
+  font-family: smtr;
+  color:#7d7d7d;
+  top:0px;
+  left:0px;
+  font-size:70px;
+  content: "\e942"
+}
+.timeline.review {
+  width: 100%;
+  border-radius: 0;
+}
+.timeline.review table {
+  width:95%;
+  margin: 0 auto;
+}
+.control {
+  float: left;
+  width:100%;
+  height:150px;
+  background: #80a0d5;
+}
 
 
 /* 버튼그룹 */
@@ -1316,6 +1483,8 @@ button::-moz-focus-inner {
 	padding:0;
 	margin:0
 }
+
+
 
 
 /* input style*/
@@ -1534,4 +1703,5 @@ input[type="password"]:focus {
 
 
 
+.mr0 { margin-right:0 !important;}
 .mb100 { margin-bottom : 100px;}
