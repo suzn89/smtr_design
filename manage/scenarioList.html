@@ -1,153 +1,173 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>긴급신고공동대응 모의훈련 시스템</title>
-    <link href="../css/incon_reset.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" type="text/css" href="../fonts/smtr/style.css">
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>긴급신고공동대응 모의훈련 시스템</title>
+  <link href="../css/incon_reset.css" rel="stylesheet" type="text/css">
+  <link href="../css/common.css" rel="stylesheet">
+  <link href="../fonts/smtr/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
-        <div id="header_cont">
-            <h1><a href="#"><i class="icon-laptop"></i>신고통합 모의훈련 시스템</a></h1>
-            <h2>시나리오 관리</h2>
-            <div id="adm_menu" class="adminmn"><span><i class="icon-administrator"></i>관리자</span>
-                <ul class="dropdown">
-                    <li><a href="#"><i class="icon-gear"></i>설정</a></li>
-                    <li><a href="#"><i class="icon-logout"></i>로그아웃</a></li>
-                </ul>
-            </div>
-        </div>  
-    </header> 
-    <section id="contents">
-        <div class="page_tit">
-            <h3>시나리오</h3>
-            <ul class="btn-group">
-                <li><a href="#" class="btn-basic"><i class="icon-plus"></i>시나리오 추가</a></li>
-            </ul>
-        </div> <!-- // page_tit -->
-
-
-        <div class="listPaging">
-                <ol>
-                    <li class="prev"><a href="#"><i class="icon-Backward-arrow-small"></i></a></li>
-                    <li class="on"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><i class="icon-Options"></i></li>
-                    <li><a href="#">120</a></li>
-                    <li class="next"><a href="#"><i class="icon-Forward-arrow-small"></i></a></li>
-                </ol>
-        </div>
-        <div id="listWrap">            
-            <div class="gradientTable">
-                <table>
-                    <colgroup>
-                        <col width="70px">                        
-                        <col width="*">                        
-                        <col width="200px">                        
-                    </colgroup>
-                    <thead>
-                    <tr>
-                        <th></th>
-                        <th>시나리오</th>
-                        <th>마지막 수정</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><span class="circleIcon"><i class="icon-crime"></i></span></td>
-                        <td>
-                            <p class="tbl_tit">성폭력 경찰 접수 소방 공동대응</p>
-                            <p class="nmaltxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의 몸에서 제거되지 않은 
-                            상태이며 범인 도주 후 피해자가 직접 경찰에 신고 함.</p>
-                            <span class="smpt">범죄 » 성폭력, 경찰 » 소방 </span>
-                        </td>
-                        <td>
-                            <p class="nmaltxt">
-                            2019년 12월 1일 월요일 오후 5:30 <br />
-                            by <span class="ptcolor">Admin</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="circleIcon"><i class="icon-rescue"></i></span></td>
-                        <td>
-                            <p class="tbl_tit">성폭력 경찰 접수 소방 공동대응</p>
-                            <p class="nmaltxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의 몸에서 제거되지 않은 
-                            상태이며 범인 도주 후 피해자가 직접 경찰에 신고 함.</p>
-                            <span class="smpt">범죄 » 성폭력, 경찰 » 소방 </span>
-                        </td>
-                        <td>
-                            <p class="nmaltxt">
-                            2019년 12월 1일 월요일 오후 5:30 <br />
-                            by <span class="ptcolor">Admin</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="circleIcon"><i class="icon-ambulance"></i></span></td>
-                        <td>
-                            <p class="tbl_tit">성폭력 경찰 접수 소방 공동대응</p>
-                            <p class="nmaltxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의 몸에서 제거되지 않은 
-                            상태이며 범인 도주 후 피해자가 직접 경찰에 신고 함.</p>
-                            <span class="smpt">범죄 » 성폭력, 경찰 » 소방 </span>
-                        </td>
-                        <td>
-                            <p class="nmaltxt">
-                            2019년 12월 1일 월요일 오후 5:30 <br />
-                            by <span class="ptcolor">Admin</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="circleIcon"><i class="icon-firefighting"></i></span></td>
-                        <td>
-                            <p class="tbl_tit">성폭력 경찰 접수 소방 공동대응</p>
-                            <p class="nmaltxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의 몸에서 제거되지 않은 
-                            상태이며 범인 도주 후 피해자가 직접 경찰에 신고 함.</p>
-                            <span class="smpt">범죄 » 성폭력, 경찰 » 소방 </span>
-                        </td>
-                        <td>
-                            <p class="nmaltxt">
-                            2019년 12월 1일 월요일 오후 5:30 <br />
-                            by <span class="ptcolor">Admin</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="circleIcon"><i class="icon-notify"></i></span></td>
-                        <td>
-                            <p class="tbl_tit">성폭력 경찰 접수 소방 공동대응</p>
-                            <p class="nmaltxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의 몸에서 제거되지 않은 
-                            상태이며 범인 도주 후 피해자가 직접 경찰에 신고 함.</p>
-                            <span class="smpt">범죄 » 성폭력, 경찰 » 소방 </span>
-                        </td>
-                        <td>
-                            <p class="nmaltxt">
-                            2019년 12월 1일 월요일 오후 5:30 <br />
-                            by <span class="ptcolor">Admin</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="circleIcon"><i class="icon-crime"></i></span></td>
-                        <td>
-                            <p class="tbl_tit">성폭력 경찰 접수 소방 공동대응</p>
-                            <p class="nmaltxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의 몸에서 제거되지 않은 
-                            상태이며 범인 도주 후 피해자가 직접 경찰에 신고 함.</p>
-                            <span class="smpt">범죄 » 성폭력, 경찰 » 소방 </span>
-                        </td>
-                        <td>
-                            <p class="nmaltxt">
-                            2019년 12월 1일 월요일 오후 5:30 <br />
-                            by <span class="ptcolor">Admin</span></p>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
+  <header>
+    <div id="header_cont">
+      <h1><a href="#"><i class="icon-laptop"></i>신고통합 모의훈련 시스템</a></h1>
+      <h2>시나리오 관리</h2>
+      <div class="adminmn" id="adm_menu">
+        <span><i class="icon-administrator"></i>관리자</span>
+        <ul class="dropdown">
+          <li>
+            <a href="#"><i class="icon-gear"></i>설정</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-logout"></i>로그아웃</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section id="contents">
+    <div class="page_tit">
+      <h3>등록된 시나리오</h3>
+      <ul class="btn-group">
+        <li>
+          <a class="btn-basic" href="#"><i class="icon-plus"></i>시나리오 추가</a>
+        </li>
+      </ul>
+    </div><!-- // page_tit -->
+    <div class="list_table bgnone">
+      <div class="radio-con">
+        <input checked id="r1" name="r" type="radio"> <label class="input-element" for="r1">전체</label> <input id="r2" name="r" type="radio"> <label class="input-element" for="r2">예정</label> <input id="r3" name="r" type="radio"> <label class="input-element" for="r3">진행</label> <input id="r5" name="r" type="radio"> <label class="input-element" for="r5">완료</label>
+      </div>
+      <div class="listPaging">
+        <ol>
+          <li class="prev">
+            <a href="#"><i class="icon-Backward-arrow-small"></i></a>
+          </li>
+          <li class="on">
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">5</a>
+          </li>
+          <li><i class="icon-Options"></i></li>
+          <li>
+            <a href="#">120</a>
+          </li>
+          <li class="next">
+            <a href="#"><i class="icon-Forward-arrow-small"></i></a>
+          </li>
+        </ol>
+      </div>
+      <ul class="cardlist">
+        <li class="crime">
+          <!-- 상황에 따라 클래스 명 변경-->
+           <a href="#"><span class="borderbox"></span>
+          <div class="img_bg">
+            <h4>범죄</h4>
+            <p>성폭력</p>
+          </div>
+          <div class="card_con">
+            <span>경찰 » 소방</span>
+            <h5>성폭력 경찰 접수 소방 공동대응성폭력 경찰 접수 소방 공동대응</h5><span class="nortxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의 밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의</span>
+          </div></a>
+        </li>
+        <li class="crime">
+          <!-- 상황에 따라 클래스 명 변경-->
+           <a href="#"><span class="borderbox"></span>
+          <div class="img_bg">
+            <h4>범죄</h4>
+            <p>가정폭력</p>
+          </div>
+          <div class="card_con">
+            <span>경찰 » 소방</span>
+            <h5>성폭력 경찰 접수 소방 공동대응성폭력 경찰 접수 소방 공동대응</h5><span class="nortxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의</span>
+          </div></a>
+        </li>
+        <li class="fire">
+          <!-- 상황에 따라 클래스 명 변경-->
+           <a href="#"><span class="borderbox"></span>
+          <div class="img_bg">
+            <h4>화재</h4>
+            <p>고층건물</p>
+          </div>
+          <div class="card_con">
+            <span>경찰 » 소방</span>
+            <h5>성폭력 경찰 접수 소방 공동대응성폭력 경찰 접수 소방 공동대응</h5><span class="nortxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의</span>
+          </div></a>
+        </li>
+        <li class="rescue">
+          <!-- 상황에 따라 클래스 명 변경-->
+           <a href="#"><span class="borderbox"></span>
+          <div class="img_bg">
+            <h4>구조</h4>
+            <p>산악사고</p>
+          </div>
+          <div class="card_con">
+            <span>경찰 » 소방</span>
+            <h5>성폭력 경찰 접수 소방 공동대응성폭력 경찰 접수 소방 공동대응</h5><span class="nortxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의</span>
+          </div></a>
+        </li>
+        <li class="ambulance">
+          <!-- 상황에 따라 클래스 명 변경-->
+           <a href="#"><span class="borderbox"></span>
+          <div class="img_bg">
+            <h4>구급</h4>
+            <p>교통사고</p>
+          </div>
+          <div class="card_con">
+            <span>경찰 » 소방</span>
+            <h5>성폭력 경찰 접수 소방 공동대응성폭력 경찰 접수 소방 공동대응</h5><span class="nortxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의</span>
+          </div></a>
+        </li>
+        <li class="etc">
+          <!-- 상황에 따라 클래스 명 변경-->
+           <a href="#"><span class="borderbox"></span>
+          <div class="img_bg">
+            <h4>기타</h4>
+            <p>자연재해</p>
+          </div>
+          <div class="card_con">
+            <span>경찰 » 소방</span>
+            <h5>성폭력 경찰 접수 소방 공동대응성폭력 경찰 접수 소방 공동대응</h5><span class="nortxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의</span>
+          </div></a>
+        </li>
+        <li class="crime">
+          <!-- 상황에 따라 클래스 명 변경-->
+           <a href="#"><span class="borderbox"></span>
+          <div class="img_bg">
+            <h4>범죄</h4>
+            <p>성폭력</p>
+          </div>
+          <div class="card_con">
+            <span>경찰 » 소방</span>
+            <h5>성폭력 경찰 접수 소방 공동대응성폭력 경찰 접수 소방 공동대응</h5><span class="nortxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의</span>
+          </div></a>
+        </li>
+        <li class="crime">
+          <!-- 상황에 따라 클래스 명 변경-->
+           <a href="#"><span class="borderbox"></span>
+          <div class="img_bg">
+            <h4>범죄</h4>
+            <p>성폭력</p>
+          </div>
+          <div class="card_con">
+            <span>경찰 » 소방</span>
+            <h5>성폭력 경찰 접수 소방 공동대응성폭력 경찰 접수 소방 공동대응</h5><span class="nortxt">밤 12시 정도에 20대로 추정되는 여성이 폭력을 동반한 성폭력에 의해 출혈 중인 상태이며, 주변은 개활지로 위치를 특정할 수 있는 건물이 없어 신고자의 위치 파악이 어려운 상황. 범죄 장소에서 찔린 유리 조각이 피해자의</span>
+          </div></a>
+        </li>
+      </ul>
+    </div><!-- // list_table -->
+  </section>
 </body>
 </html>
