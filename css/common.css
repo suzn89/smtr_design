@@ -145,6 +145,85 @@ section {
   max-width:1920px;
   padding:0 20px;
 }
+/* 로그인 화면 */
+#login_box {
+	width:480px;
+	margin:160px auto 0;
+	border-radius:5px;
+	border:1px solid #E3E3E3;
+}
+.loin_tit {
+	padding:30px;
+	background:#F8F8F8;
+	border-bottom:1px solid #E3E3E3
+}
+#login_box h3 {
+	height:45px;
+	line-height:45px;
+	font-size:30px;
+	font-weight:600;	
+}
+#login_box h3 i {
+  margin-right: 10px;
+}
+#login_box legend {
+  display: none;
+}
+#login_box h4 {
+	margin-top:12px;
+	font-size:22px;
+}
+#login_box fieldset {
+	padding:30px;
+}
+#login_box .userid {
+	margin-bottom:40px;
+}
+#login_box .i_label {
+	display:block;
+	margin-bottom:12px;
+	font-size:22px;
+}
+#login_box .i_text {
+	width:420px;
+	height:48px;
+	line-height:48px;
+	padding:0px 23px;
+	font-size:22px;
+	color:#2E303D;
+	border-radius:5px;
+	border:1px solid #E3E3E3;
+}
+#login_box .i_text:active,#login_box .i_text:focus {
+  background:#FBFBC2;
+  border: 3px solid #80A0D5;
+}
+#login_box .btnlogin input {
+	display:inline-block;
+	width:135px;
+	height:53px;
+	margin-top:30px;
+	padding:0;
+	font-size:22px;
+	color:#538fc7;
+	border-radius:5px;
+	border:1px solid #538fc7;
+	background:none;
+}
+#login_box .btnlogin input:hover,#login_box .btnlogin input:focus,#login_box .btnlogin input:active {
+	display:inline-block;
+	width:135px;
+	height:53px;
+	margin-top:30px;
+	padding:0;
+	font-size:22px;
+	color:#fff;
+	border-radius:5px;
+	border:1px solid #4983b9;
+	background:#4983b9;
+}
+
+
 
 /* 홈 */
 #index {
