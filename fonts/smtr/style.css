@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'smtr';
-  src:  url('fonts/smtr.eot?ry6k4x');
-  src:  url('fonts/smtr.eot?ry6k4x#iefix') format('embedded-opentype'),
-    url('fonts/smtr.ttf?ry6k4x') format('truetype'),
-    url('fonts/smtr.woff?ry6k4x') format('woff'),
-    url('fonts/smtr.svg?ry6k4x#smtr') format('svg');
+  src:  url('fonts/smtr.eot?8h4w3f');
+  src:  url('fonts/smtr.eot?8h4w3f#iefix') format('embedded-opentype'),
+    url('fonts/smtr.ttf?8h4w3f') format('truetype'),
+    url('fonts/smtr.woff?8h4w3f') format('woff'),
+    url('fonts/smtr.svg?8h4w3f#smtr') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-calendar:before {
+  content: "\e925";
+}
 .icon-warning:before {
   content: "\e924";
 }
