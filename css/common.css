@@ -695,6 +695,8 @@ section {
 .cardlist li .card_con {
   width: 100%;
   padding: 15px 20px;
+  height:175px;
+  overflow:hidden;
 }
 .cardlist li .card_con {
   font-size:14px;
