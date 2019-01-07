@@ -1955,6 +1955,9 @@ input[type="checkbox"]:checked+label {
   left: 85px;
   top: 15px;
 }
+.view__list.type2 dl {
+  float: left;
+}
 .view__list.type2 dt,
 .view__card.type2 dt {
   margin-bottom: 0;
@@ -1962,6 +1965,8 @@ input[type="checkbox"]:checked+label {
 .view__list.type2 dd,
 .view__card.type2 dd {
   color: #7d7d7d;
+  float: left;
+  margin-right: 20px;
 }
 .view__card.type2 .delete {
   position: absolute;
@@ -2163,8 +2168,104 @@ z-index:999;
   color: #7d7d7d;
   font-size: 35px;  
 }
-
-
+#layer_pop_03 {
+  width:900px;
+  margin-left: -515px;
+}
+.layer_conts03 {
+  width: 870px;
+  min-height: 380px;
+  height: 490px;  
+  position: relative;
+  padding-top: 30px;
+  margin: 15px;
+}
+.layer_conts03 td .photo {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #e3e3e3;  
+}
+.layer_conts03 td .photo.diver,
+.layer_conts03 td .photo.police,
+.layer_conts03 td .photo.fireman {
+  background: #ffffff;  
+}
+.layer_conts03 td .photo.diver:before {
+  font-family: smtr;
+  content: '\e903';
+  color: #7d7d7d;
+  font-size: 35px;  
+}
+.layer_conts03 td .photo.police:before {
+  font-family: smtr;
+  content: '\e935';
+  color: #7d7d7d;
+  font-size: 27px;  
+}
+.layer_conts03 td .photo.fireman:before {
+  font-family: smtr;
+  content: '\e901';
+  color: #7d7d7d;
+  font-size: 35px;  
+}
+.view__list.type2 .photo.diver:before {
+  font-family: smtr;
+  content: '\e903';
+  color: #ffffff;
+  font-size: 65px; 
+  position: absolute;
+  left:25px;
+  top:5px; 
+}
+.view__list.type2 .photo.fireman:before {
+  font-family: smtr;
+  content: '\e901';
+  color: #ffffff;
+  font-size: 65px;  
+  position: absolute;
+  left:28px;
+  top:0px; 
+}
+.view__list.type2 .photo.police:before {
+  font-family: smtr;
+  content: '\e935';
+  color: #ffffff;
+  font-size: 50px;  
+  position: absolute;
+  left:25px;
+  top:13px; 
+}
+.view__card.type2 .photo.diver:before {
+  font-family: smtr;
+  content: '\e903';
+  color: #ffffff;
+  font-size: 95px; 
+  position: absolute;
+  left:85px;
+  top:15px; 
+}
+.view__card.type2 .photo.fireman:before {
+  font-family: smtr;
+  content: '\e901';
+  color: #ffffff;
+  font-size: 95px;  
+  position: absolute;
+  left:90px;
+  top:14px; 
+}
+.view__card.type2 .photo.police:before {
+  font-family: smtr;
+  content: '\e935';
+  color: #ffffff;
+  font-size: 75px;  
+  position: absolute;
+  left:80px;
+  top:30px; 
+}
 
 
 /* .layer_conts {
@@ -2241,6 +2342,7 @@ z-index:999;
   display:block;
   clear: both;
 }
+.cl { clear: both;}
 .ir { text-indent: -9999em !important; font-size: 0 !important;}
 .required { color: #C90000; font-size:14px; top:0;}
 .bgred { background:#c90000 !important;}
