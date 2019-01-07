@@ -1039,7 +1039,7 @@ section {
 }
 .butn_basic_default {
   color:#ffffff;
-  background: rgba(128,160,213,0.3);
+  background: rgba(128,160,213,0.6);
   border-color:rgba(128,160,213,0.1);
 }
 [class^="butn_basic_"]:hover {
@@ -2057,7 +2057,40 @@ input[type="checkbox"]:checked+label {
 	border:none;
 	color:#7d7d7d
 }
-
+.upload_pop .closePop {	
+	outline:none;
+	position:absolute;
+	right:10px;
+	top:25px;
+	background:none;
+	border:none;
+	color:#7d7d7d
+}
+.upload_pop {
+  width: 800px;
+  height: 700px;
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+  position:absolute;
+  background:#ffffff;
+  -moz-box-shadow:0px 1px 10px #e3e3e3;
+  -webkit-box-shadow:0px 1px 10px #e3e3e3;
+  box-shadow:0px 1px 10px #e3e3e3;
+  left:50%;
+  top:230px;
+  z-index:999;
+  margin-left: -400px;
+}
+.upload_pop h5 {
+  background: #e3e3e3;
+}
+.upload_pop .upload_cont {
+  padding: 20px;
+  text-align: center;
+}
+.upload_pop p {  
+  font-size: 24px;
+}
 #warn_layer {
 	background:#F3DEE0;
 }
@@ -2066,7 +2099,7 @@ input[type="checkbox"]:checked+label {
 }
 
 #warn_layer03 {
-	background:#DBEEF8;
+	background:rgb(138, 170, 187);
 }
 #warn_layer03 h5 {
 	color:#538FC7;
@@ -2082,6 +2115,56 @@ box-shadow:0px 1px 10px #e3e3e3;
 left:50%;
 top:230px;
 z-index:999;
+}
+.progressbar {
+  height:230px;
+  overflow-y:auto;
+  margin: 30px 0;
+}
+
+.progressbar ul li {
+  
+  position: relative;
+  height:42px;    
+  text-align: right;
+  margin: 5px 10px;  
+}
+.progressbar ul li:after {
+  content:'';
+  width:100%;
+  height:5px;
+  opacity: 0.5;
+  position:absolute;
+  left:0;
+  bottom: 0;
+  border-radius: 10px;
+  background: #80A0D5;
+}
+.progressbar .filename {
+  font-size: 18px;
+  float: left;
+}
+.progressbar .percentage, 
+.progressbar .complate {
+  font-size: 16px;  
+  margin-left: 5px;
+}
+.progressbar .stop_upload {
+  color: #80A0D5;
+  font-size: 16px;
+  margin-left: 50px;
+}
+.progressbar .progress {
+  background: #80a0d5;
+  height: 5px;
+  display:block;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.progressbar .disnone {
+  display:none;
 }
 #layer_pop_01 {
   width:1030px;
@@ -2140,7 +2223,7 @@ z-index:999;
 }
 #layer_pop_02 {
   width:900px;
-  margin-left: -515px;
+  margin-left: -450px;
 }
 .layer_conts02 {
   width: 870px;
@@ -2170,7 +2253,7 @@ z-index:999;
 }
 #layer_pop_03 {
   width:900px;
-  margin-left: -515px;
+  margin-left: -450px;
 }
 .layer_conts03 {
   width: 870px;

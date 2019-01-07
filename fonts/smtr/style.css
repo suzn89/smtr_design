@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'smtr';
-  src:  url('fonts/smtr.eot?5yelxb');
-  src:  url('fonts/smtr.eot?5yelxb#iefix') format('embedded-opentype'),
-    url('fonts/smtr.ttf?5yelxb') format('truetype'),
-    url('fonts/smtr.woff?5yelxb') format('woff'),
-    url('fonts/smtr.svg?5yelxb#smtr') format('svg');
+  src:  url('fonts/smtr.eot?g2xzdm');
+  src:  url('fonts/smtr.eot?g2xzdm#iefix') format('embedded-opentype'),
+    url('fonts/smtr.ttf?g2xzdm') format('truetype'),
+    url('fonts/smtr.woff?g2xzdm') format('woff'),
+    url('fonts/smtr.svg?g2xzdm#smtr') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close:before {
+  content: "\e928";
+}
 .icon-teach-man:before {
   content: "\e926";
 }
