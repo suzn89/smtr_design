@@ -1902,6 +1902,82 @@ input[type="checkbox"]:checked+label {
 .view__card span .opacity {
   opacity: 0.3;
 }
+.view__list.type2 .photo {
+  height:100px;
+  width: 120px;  
+}
+.view__card.type2 li {
+  width: 270px;
+}
+.view__card.type2 .photo {
+  height:175px;
+  width: 270px;  
+}
+.view__list.type2 span,
+.view__card.type2 span {
+  background: #7d7d7d;
+}
+.view__list.type2 .photo.photo_man:before {
+  font-family: smtr;
+  content: "\e926";
+  color: #ffffff;
+  opacity: 0.5;
+  font-size: 60px;
+  position: absolute;
+  left: 30px;
+  top: 5px;
+}
+.view__list.type2 .photo.photo_woman:before {
+  font-family: smtr;
+  content: "\e927";
+  color: #ffffff;
+  opacity: 0.5;
+  font-size: 60px;
+  position: absolute;
+  left: 35px;
+  top: 5px;
+}
+.view__card.type2 .photo.photo_man:before {
+  font-family: smtr;
+  content: "\e926";
+  color: #ffffff;
+  opacity: 0.5;
+  position: absolute;
+  left: 85px;
+  top: 15px;
+}
+.view__card.type2 .photo.photo_woman:before {
+  font-family: smtr;
+  content: "\e927";
+  color: #ffffff;
+  opacity: 0.5;
+  position: absolute;
+  left: 85px;
+  top: 15px;
+}
+.view__list.type2 dt,
+.view__card.type2 dt {
+  margin-bottom: 0;
+}
+.view__list.type2 dd,
+.view__card.type2 dd {
+  color: #7d7d7d;
+}
+.view__card.type2 .delete {
+  position: absolute;
+  right:15px;
+  top:15px;
+  border:1px solid #e3e3e3;
+  border-radius: 5px;
+  font-size:14px;
+  display:block;
+  padding:5px 20px;
+  background:none;
+  color:#e3e3e3;
+  cursor: pointer;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5)
+}
+
 .card_sche li {
   height:200px;
 }
@@ -2043,7 +2119,7 @@ z-index:999;
 .fixedtbl td {
   border-bottom: 1px solid #e3e3e3;
   padding: 8px 10px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .fixedtbl th {
   padding: 0px 10px;
@@ -2057,6 +2133,37 @@ z-index:999;
   line-height: 30px; 
   
 }
+#layer_pop_02 {
+  width:900px;
+  margin-left: -515px;
+}
+.layer_conts02 {
+  width: 870px;
+  min-height: 380px;
+  height: 380px;  
+  position: relative;
+  padding-top: 30px;
+  margin: 15px;
+}
+.layer_conts02 td .photo {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #e3e3e3;  
+}
+.layer_conts02 td .photo.photono {
+  background: #ffffff;  
+}
+.layer_conts02 td .photo.photono:before {
+  font-family: smtr;
+  content: '\e926';
+  color: #7d7d7d;
+  font-size: 35px;  
+}
+
 
 
 
