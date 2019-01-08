@@ -1085,7 +1085,12 @@ section {
   font-size: 22px;
   line-height: 62px;
 }
-
+.tr_viewbox .zoom:hover {
+  color: #80a0d5;
+}
+.tr_viewbox .zoom:active {
+  color:#4983b9;
+}
 .timeline {
   position: relative;
   float: left;
@@ -1103,24 +1108,6 @@ section {
 }
 .timeline h4 span, .detail h4 span {
   font-size: 14px;
-}
-.timeline .icons01 {
-  position: absolute;
-  right: 15px;
-  top: 10px;
-}
-.timeline .icons01 li {
-  display:block;
-  float: left;
-  margin-left: 5px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  font-size: 25px;
-  color: #ffffff;
-  background: #7d7d7d;
-  border-radius: 5px;
 }
 .detail {
   position: relative;
@@ -1158,7 +1145,7 @@ section {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
   color: #ffffff;
   background: #7d7d7d;
   border-radius: 5px;
@@ -1348,7 +1335,7 @@ section {
   height: 80px;
   line-height: 80px;
   text-align: center;
-  font-size: 45px;
+  font-size: 30px;
   color: #ffffff;
   background: #7d7d7d;
   border-radius: 5px;
