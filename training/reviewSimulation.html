@@ -34,117 +34,102 @@
       <div class="scrollwrap">
         <table>
           <colgroup>
-            <col width="80px">
-            <col width="50px">
-            <col width="*">
-            <col width="50px">
-            <col width="80px">
+            <col width="100%">
           </colgroup>
           <tbody>
             <tr>
-              <td>10:30:14</td>
-              <td><i>접수</i></td>
-              <td class="leftalign">
-                <dl>
-                  <dt>1번 수보대</dt>
-                  <dd>로그인</dd>
-                </dl>
+              <td>
+                <div class="left">
+                  <span class="time">10:30:14</span>
+                  <span class="status">접수</span>
+                  <dl>
+                    <dt>1번수보대</dt>
+                    <dd>로그인</dd>
+                  </dl>
+                </div>
               </td>
-              <td></td>
-              <td></td>
             </tr>
             <tr>
-              <td>10:30:14</td>
-              <td><i>접수</i></td>
-              <td class="leftalign">
-                <dl>
-                  <dt>1번 수보대</dt>
-                  <dd>착신</dd>
-                </dl>
+              <td>
+                <div class="left">
+                  <span class="time">10:30:14</span>
+                  <span class="status">접수</span>
+                  <dl>
+                    <dt>1번수보대</dt>
+                    <dd>2번 수보대</dd>
+                  </dl>
+                </div>
               </td>
-              <td></td>
-              <td></td>
             </tr>
             <tr>
-              <td>10:30:14</td>
-              <td><i>접수</i></td>
-              <td class="leftalign">
-                <dl>
-                  <dt>1번 수보대</dt>
-                  <dd>네 119입니다</dd>
-                </dl>
+              <td>
+                <div class="left">
+                  <span class="time">10:30:14</span>
+                  <span class="status ring">접수</span> <!-- 190221 통화박스 색상변경 클래스 ring 추가 -->
+                  <dl>
+                    <dt>착신</dt>
+                    <dd>1번 수보대</dd>
+                  </dl>
+                </div>
               </td>
-              <td></td>
-              <td></td>
             </tr>
             <tr>
-              <td>10:30:14</td>
-              <td><i>접수</i></td>
-              <td class="leftalign">
-                <dl>
-                  <dt>1번 수보대</dt>
-                  <dd>네 여기 청아람아파트 앞인데요 불이 났어요</dd>
-                </dl>
+              <td>
+                <div class="right">
+                  <span class="time">10:30:14</span>
+                  <span class="status ring">접수</span>
+                  <dl>
+                    <dt>착신</dt>
+                    <dd>1번 수보대</dd>
+                  </dl>
+                </div>
               </td>
-              <td></td>
-              <td></td>
             </tr>
             <tr>
-              <td>10:30:14</td>
-              <td><i>접수</i></td>
-              <td class="leftalign">
-                <dl>
-                  <dt>1번 수보대</dt>
-                  <dd>재난분류</dd>
-                </dl>
+              <td>
+                <div class="left cored">
+                  <span class="time">10:30:14</span>
+                  <span class="status">접수</span>
+                  <dl>
+                    <dt>착신</dt>
+                    <dd>1번 수보대</dd>
+                  </dl>
+                </div>
               </td>
-              <td></td>
-              <td></td>
             </tr>
             <tr>
-              <td>10:30:14</td>
-              <td><i>접수</i></td>
-              <td class="leftalign">
-                <dl>
-                  <dt>1번 수보대</dt>
-                  <dd>불이 난 정확한 위치를 말해주시겠습니까</dd>
-                </dl>
+              <td>
+                <div class="right cored">
+                  <span class="time">10:30:14</span>
+                  <span class="status">접수</span>
+                  <dl>
+                    <dt>착신</dt>
+                    <dd>1번 수보대</dd>
+                  </dl>
+                </div>
               </td>
-              <td></td>
-              <td></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td class="rightalign reddl"> <!-- 오른쪽 정렬 빨강일 경우 td에 rightalign reddl 클래스 추가-->
-                <dl>
-                  <dt>1번 수보대</dt>
-                  <dd>청아람 아파트 앞에 피자집이 있는데 여기에서 불이 나고 있습니다</dd>
-                </dl>
-              </td>
-              <td><i class="co_red">접수</i></td>
-              <td class="rightalign co_red">10:30:14</td> <!-- 나머지는 그냥 co_red 클래스 추가-->
-            </tr>
-            <tr>
-              <td>10:30:14</td>
-              <td><i class="co_red">접수</i></td>
-              <td class="leftalign co_red">
-                <dl>
-                  <dt>1번 수보대</dt>
-                  <dd>재난위치 변경</dd>
-                </dl>
-              </td>
-              <td></td>
-              <td></td>
-            </tr>
+
           </tbody>
         </table>
       </div><!-- // scrollwrap -->
     </div><!-- // timeline -->
     <div class="control">
       <div class="sign">
+      </div> <!-- // 지지직 거리는거 -->
 
-      </div>
+      <div class="controler">
+        <button id="back"><img src="../images/back.png" alt="10초뒤로"></button>
+        <button id="play"><img src="../images/play.png" alt="재생"></button>
+        <!--play 클릭하면 pause.png 로 이미지 변경-->
+        <button id="forward"><img src="../images/forward.png" alt="10초앞으로"></button>
+      </div> <!-- // controler -->
+      <div class="volume_bar">
+        <div class="controlbtn" style="top:calc(30% - 5px)"></div>
+        <div class="soundarea" style="height:30%"></div>
+        <div class="volume" style="top:calc(30% - 28px)"><span>80</span></div>
+        <!-- top 높이값 퍼센트로 지정 -->
+      </div> <!-- // volume_bar -->
     </div>
 
 
